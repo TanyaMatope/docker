@@ -14,14 +14,6 @@ jobs:
     steps:
       - uses: actions/checkout@v3
 
-      - name: Run a one-line script
-        run: echo Hello, world!
-
-      - name: Run a multi-line script
-        run: |
-          echo Add other actions to build,
-          echo test, and deploy your project.
-
       - name: Set up Node.js
         uses: actions/setup-node@v2
         with:
@@ -32,7 +24,3 @@ jobs:
 
       - name: Run tests
         run: npm test
-
-      - name: Deploy to production
-        run: |
-          # Add your deployment commands here
